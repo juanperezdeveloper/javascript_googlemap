@@ -1,0 +1,155 @@
+.title {
+    color: rgb(43, 43, 43);
+}
+.location-nav {
+    background-color: rgb(249, 249, 249);
+    color: rgb(249, 121, 81);
+}
+
+.custom-warning-bg, .roof-active {
+    background-color: rgb(249, 121, 81);
+}
+
+body {
+    margin: 50px 0;
+    background-color: rgb(254, 254, 254);
+}
+
+.custom-fluid-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* slider bar */
+input[type="range"]{
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  outline: none;
+  height: 4px;
+  width: 100%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0.15, rgb(196, 196, 196))
+  );
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid #CECECE; */
+  height: 43px;
+  width: 43px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 3px 3px rgb(240, 240, 240);
+}
+
+.bubble {
+  position: relative;
+  top: 18px;
+}
+.bubble:after {
+  content: ' KWH';
+}
+
+/* toggle switch button */
+.onoffswitch {
+  position: relative; width: 80px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border-radius: 24px;
+}
+
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 13px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "YES";
+  padding-left: 7px;
+  background-color: #76FF03; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  content: "NO";
+  padding-right: 15px;
+  background-color: rgb(249,249,249); color: #B9B9B9;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block; 
+  width: 43px; 
+  margin: -0.1px;
+  background: #FFFFFF;
+  position: absolute; 
+  top: -6px; 
+  bottom: 2px;
+  right: 46px;
+  box-shadow: 0px 0px 3px 3px rgb(240, 240, 240);
+  border-radius: 30px;
+  transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}
+
+/* circle check button */
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.border-circle {
+  border: 1px solid rgb(255, 115, 71)!important;;
+}
+
+.border-circle::before {
+  background-color: darkorange;
+}
+
+.google-map {
+  height: 400px;
+}
